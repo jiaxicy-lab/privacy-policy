@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 - TikTok 灵感采集助手</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+  h1 { font-size: 22px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+  h2 { font-size: 16px; margin-top: 28px; color: #111; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+  th { background: #f5f5f5; }
+  p, li { font-size: 14px; }
+  .updated { color: #888; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>隐私权政策 · Privacy Policy</h1>
+<p class="updated">最后更新 / Last Updated：2026-06-17</p>
+<p><strong>灵感库 · TikTok 视频采集助手</strong></p>
+
+<h2>1. 数据收集</h2>
+<p>本扩展程序<strong>不收集、不存储、不传输</strong>任何数据到开发者服务器。</p>
+<p>本扩展在运行过程中会处理以下数据，所有数据<strong>仅存储在您的本地浏览器</strong>（<code>chrome.storage.local</code>）中：</p>
+<ul>
+  <li><strong>TikTok 视频元数据</strong>：标题、话题标签、作者信息、播放/点赞/评论等统计数据。仅用于本地筛选和展示。</li>
+  <li><strong>视频封面图与关键帧截图</strong>：用于 AI 分析功能，发送到<strong>您自行配置的 AI API 服务</strong>，不经过开发者服务器。</li>
+  <li><strong>AI API 密钥</strong>：仅存储在本地，仅用于发起 AI 分析请求，开发者无法访问。</li>
+  <li><strong>自定义 Webhook / 灵感库 API 配置</strong>：仅存储在本地，数据直接由您的浏览器推送到您指定的服务。</li>
+  <li><strong>操作日志与采集配置</strong>：本地存储，随时可由您清除。</li>
+</ul>
+
+<h2>2. 数据共享</h2>
+<p>本扩展<strong>不向任何第三方共享数据</strong>，以下情况除外（均由您主动配置触发）：</p>
+<ul>
+  <li>您配置了 AI 分析功能时，视频文本及图像数据会发送至您选择的 AI 服务商（如 OpenAI、Anthropic、火山引擎等）。</li>
+  <li>您配置了灵感库推送功能时，视频数据会推送到您填写的 API 地址。</li>
+</ul>
+
+<h2>3. 数据存储与删除</h2>
+<p>所有数据存储在您本地浏览器的 <code>chrome.storage.local</code> 中。您可以随时在扩展界面内清除全部数据，或通过卸载扩展来完全删除所有本地数据。</p>
+
+<h2>4. 权限说明</h2>
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr><td><code>storage</code></td><td>在本地保存采集配置、视频数据和日志</td></tr>
+  <tr><td><code>tabs</code></td><td>控制 TikTok 标签页进行自动化采集</td></tr>
+  <tr><td><code>downloads</code></td><td>支持视频下载功能</td></tr>
+  <tr><td><code>sidePanel</code></td><td>在浏览器侧边栏展示扩展界面</td></tr>
+  <tr><td><code>notifications</code></td><td>采集完成时发送桌面通知</td></tr>
+  <tr><td><code>host_permissions: tiktok.com</code></td><td>在 TikTok 页面注入脚本以捕获视频数据</td></tr>
+</table>
+
+<h2>5. 未成年人</h2>
+<p>本扩展不面向 13 岁以下未成年人，也不主动收集任何用户的个人身份信息。</p>
+
+<h2>6. 联系方式</h2>
+<p>如有任何隐私相关问题，请联系：<a href="mailto:jiax.icy@gmail.com">jiax.icy@gmail.com</a></p>
+
+<hr>
+<h2>English Version</h2>
+<p>This extension does <strong>not collect, store, or transmit any data to developer servers</strong>. All data (TikTok video metadata, AI API keys, webhook configurations, and operation logs) is stored exclusively in your local browser via <code>chrome.storage.local</code>. Data is only sent to third-party AI services or your own API endpoints when you explicitly configure those features. You can delete all data at any time by clearing the extension or uninstalling it. Contact: <a href="mailto:jiax.icy@gmail.com">jiax.icy@gmail.com</a></p>
+
+</body>
+</html>
